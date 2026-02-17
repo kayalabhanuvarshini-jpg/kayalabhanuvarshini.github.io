@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 5px gray;
+        }
+
+        button {
+            padding: 10px 15px;
+            border: none;
+            background: black;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            background: #333;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1 id="name">K.BHANU VARSHINI</h1>
+    <p>Web Developer | Student</p>
+</header>
+
+<section>
+    <div class="card">
+        <h2>About Me</h2>
+        <p>I am learning web development and I love building projects.</p>
+    </div>
+
+    <div class="card">
+        <h2>Projects</h2>
+        <ul>
+            <li>Portfolio Website</li>
+            <li>Scholarship Finder Website</li>
+            <li>JavaScript Calculator</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Contact</h2>
+        <p>Email: bhanuvarshini123@gmail.com</p>
+        <button onclick="changeName()">Click Me</button>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 My Portfolio</p>
+</footer>
+
+<script>
+    function changeName() {
+        document.getElementById("name").innerText = "Thanks for Visiting!";
+    }
+</script>
+
+</body>
+</html>
